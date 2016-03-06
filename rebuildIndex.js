@@ -56,7 +56,7 @@ ghostPosts.db[0].data.posts.forEach(function(post) {
             id: post.uuid,
             title: post.title,
             content: post.html.replace(/<[^>]+>/g, ' '),
-            url: blogUrl + '/' + post.slug,
+            url: blogUrl + '/' + post.slug + '/',
             pubDate: new Date(post.published_at)
         });
     }
